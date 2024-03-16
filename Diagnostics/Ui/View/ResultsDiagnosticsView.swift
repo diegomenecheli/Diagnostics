@@ -10,12 +10,15 @@ import SwiftUI
 
 struct ResultsDiagnosticsView: View {
     @Environment(\.colorScheme) var colorScheme: ColorScheme
+    @ObservedObject var viewModel: DeviceViewModel
+    
+    init(viewModel: DeviceViewModel = DeviceViewModel.shared) {
+        self.viewModel = viewModel
+    }
     
     var body: some View {
-        ZStack {
-            
-        }
-        .frame(maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .bottom)
+        Text("Device Name: \(viewModel.getDeviceInfo().name)")
+        Text("Device Model: \(viewModel.getDeviceInfo().model)")
     }
 }
 

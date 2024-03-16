@@ -45,10 +45,8 @@ struct DiagnosticsApp: App {
                             }
                         }
                     }
-                    .preferredColorScheme(userTheme.colorScheme)
             } else {
                 ResultsDiagnosticsView()
-                    .preferredColorScheme(userTheme.colorScheme)
             }
         }
         .environment(\.colorScheme, userTheme.colorScheme ?? .light)

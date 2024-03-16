@@ -23,6 +23,16 @@
 		7A826BA52BA2BDEF0010D64E /* wifi-dark.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A826BA32BA2BDEF0010D64E /* wifi-dark.json */; };
 		7A826BA62BA2BDEF0010D64E /* wifi-light.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A826BA42BA2BDEF0010D64E /* wifi-light.json */; };
 		7A826BA82BA2BE570010D64E /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A826BA72BA2BE570010D64E /* LottieView.swift */; };
+		7AF80DBD2BA55BFB00978299 /* DeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80DBC2BA55BFB00978299 /* DeviceViewModel.swift */; };
+		7AF80DBF2BA55C6A00978299 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80DBE2BA55C6A00978299 /* DeviceInfo.swift */; };
+		7AF80DC22BA55DF700978299 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80DC12BA55DF700978299 /* FileManager.swift */; };
+		7AF80DC42BA55E7200978299 /* StringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80DC32BA55E7200978299 /* StringHelper.swift */; };
+		7AF80DC92BA5608C00978299 /* PerformanceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80DC82BA5608C00978299 /* PerformanceInfo.swift */; };
+		7AF80DCB2BA61DBF00978299 /* BatteryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80DCA2BA61DBF00978299 /* BatteryService.swift */; };
+		7AF80DCD2BA61DED00978299 /* DiskSpaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80DCC2BA61DED00978299 /* DiskSpaceService.swift */; };
+		7AF80DCF2BA61E1D00978299 /* UptimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80DCE2BA61E1D00978299 /* UptimeService.swift */; };
+		7AF80DD12BA61E8900978299 /* DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80DD02BA61E8900978299 /* DeviceService.swift */; };
+		7AF80DD32BA6203400978299 /* DeviceInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80DD22BA6203400978299 /* DeviceInfoService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +71,16 @@
 		7A826BA32BA2BDEF0010D64E /* wifi-dark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "wifi-dark.json"; path = "../../../../../../Downloads/wifi-dark.json"; sourceTree = "<group>"; };
 		7A826BA42BA2BDEF0010D64E /* wifi-light.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "wifi-light.json"; path = "../../../../../../Downloads/wifi-light.json"; sourceTree = "<group>"; };
 		7A826BA72BA2BE570010D64E /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		7AF80DBC2BA55BFB00978299 /* DeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewModel.swift; sourceTree = "<group>"; };
+		7AF80DBE2BA55C6A00978299 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		7AF80DC12BA55DF700978299 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		7AF80DC32BA55E7200978299 /* StringHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHelper.swift; sourceTree = "<group>"; };
+		7AF80DC82BA5608C00978299 /* PerformanceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceInfo.swift; sourceTree = "<group>"; };
+		7AF80DCA2BA61DBF00978299 /* BatteryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryService.swift; sourceTree = "<group>"; };
+		7AF80DCC2BA61DED00978299 /* DiskSpaceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskSpaceService.swift; sourceTree = "<group>"; };
+		7AF80DCE2BA61E1D00978299 /* UptimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UptimeService.swift; sourceTree = "<group>"; };
+		7AF80DD02BA61E8900978299 /* DeviceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceService.swift; sourceTree = "<group>"; };
+		7AF80DD22BA6203400978299 /* DeviceInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +133,9 @@
 		7A0783522B9FF63D0039F6F8 /* Diagnostics */ = {
 			isa = PBXGroup;
 			children = (
-				7A826BA22BA2B8940010D64E /* Service */,
-				7A826BA12BA2B8600010D64E /* Controller */,
+				7AF80DC52BA55FB900978299 /* Service */,
+				7AF80DC02BA55DDE00978299 /* Utils */,
+				7AF80DB92BA5577500978299 /* ViewModel */,
 				7A826BA02BA2B8530010D64E /* Model */,
 				7A0783802B9FFAF80039F6F8 /* Ui */,
 				7A0783532B9FF63D0039F6F8 /* DiagnosticsApp.swift */,
@@ -200,22 +221,47 @@
 		7A826BA02BA2B8530010D64E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7AF80DBE2BA55C6A00978299 /* DeviceInfo.swift */,
+				7AF80DC82BA5608C00978299 /* PerformanceInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		7A826BA12BA2B8600010D64E /* Controller */ = {
+		7AF80DB92BA5577500978299 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				7AF80DBC2BA55BFB00978299 /* DeviceViewModel.swift */,
 			);
-			path = Controller;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		7A826BA22BA2B8940010D64E /* Service */ = {
+		7AF80DC02BA55DDE00978299 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				7AF80DC12BA55DF700978299 /* FileManager.swift */,
+				7AF80DC32BA55E7200978299 /* StringHelper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7AF80DC52BA55FB900978299 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7AF80DD42BA621F800978299 /* DeviceInfo */,
+				7AF80DD02BA61E8900978299 /* DeviceService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		7AF80DD42BA621F800978299 /* DeviceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				7AF80DD22BA6203400978299 /* DeviceInfoService.swift */,
+				7AF80DCA2BA61DBF00978299 /* BatteryService.swift */,
+				7AF80DCE2BA61E1D00978299 /* UptimeService.swift */,
+				7AF80DCC2BA61DED00978299 /* DiskSpaceService.swift */,
+			);
+			path = DeviceInfo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,13 +404,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AF80DC92BA5608C00978299 /* PerformanceInfo.swift in Sources */,
 				7A07838C2B9FFDF30039F6F8 /* Item.swift in Sources */,
 				7A0783852B9FFB7A0039F6F8 /* Theme.swift in Sources */,
+				7AF80DCF2BA61E1D00978299 /* UptimeService.swift in Sources */,
+				7AF80DC42BA55E7200978299 /* StringHelper.swift in Sources */,
 				7A07838A2B9FFD8C0039F6F8 /* LoadingView.swift in Sources */,
+				7AF80DCD2BA61DED00978299 /* DiskSpaceService.swift in Sources */,
 				7A0783832B9FFB380039F6F8 /* ThemeChangeView.swift in Sources */,
+				7AF80DBD2BA55BFB00978299 /* DeviceViewModel.swift in Sources */,
+				7AF80DC22BA55DF700978299 /* FileManager.swift in Sources */,
 				7A826BA82BA2BE570010D64E /* LottieView.swift in Sources */,
 				7A07838E2B9FFE8B0039F6F8 /* ResultsDiagnosticsView.swift in Sources */,
+				7AF80DBF2BA55C6A00978299 /* DeviceInfo.swift in Sources */,
 				7A0783542B9FF63D0039F6F8 /* DiagnosticsApp.swift in Sources */,
+				7AF80DD32BA6203400978299 /* DeviceInfoService.swift in Sources */,
+				7AF80DCB2BA61DBF00978299 /* BatteryService.swift in Sources */,
+				7AF80DD12BA61E8900978299 /* DeviceService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
