@@ -6,9 +6,6 @@
 //
 
 import Foundation
-import UIKit
-
-import Foundation
 
 protocol DeviceServiceProtocol {
     func getDeviceInfo() -> DeviceInfo

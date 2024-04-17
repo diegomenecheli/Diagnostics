@@ -14,10 +14,10 @@ struct LoadingView: View {
             Color("Background")
                 .edgesIgnoringSafeArea(.all)
             
-            LottieView(filename: colorScheme == .dark ? "wifi-dark" : "wifi-light")
-                .frame(height: 240)
-                .frame(maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
-                .padding(.bottom, 120)
+//            LottieView(filename: colorScheme == .dark ? "wifi-dark" : "wifi-light")
+//                .frame(height: 240)
+//                .frame(maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .center)
+//                .padding(.bottom, 120)
         }
         .frame(maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .bottom)
     }
@@ -25,5 +25,4 @@ struct LoadingView: View {
 
 #Preview {
     LoadingView()
-        .modelContainer(for: Item.self, inMemory: true)
 }

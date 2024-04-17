@@ -10,22 +10,14 @@ import SwiftData
 
 @main
 struct DiagnosticsApp: App {
-    
-    @State private var showSplashScreen = true
     @AppStorage("userTheme") private var userTheme: Theme = .systemDefault
+    @ObservedObject var deviceViewModel: DeviceViewModel = DeviceViewModel.shared
+    @State private var updatedData = false
     
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-        
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
+    private func handleData() {
+        deviceViewModel.updateDeviceInfo()
+        updatedData = true
+    }
     
     init() {
         let appearance = UINavigationBarAppearance()
@@ -36,20 +28,16 @@ struct DiagnosticsApp: App {
     
     var body: some Scene {
         WindowGroup {
-            if showSplashScreen {
+            if updatedData {
                 LoadingView()
                     .onAppear {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.2) {
-                            withAnimation {
-                                showSplashScreen = false
-                            }
-                        }
+                        handleData()
                     }
             } else {
-                ResultsDiagnosticsView()
+                ResultsCompletedView()
             }
         }
         .environment(\.colorScheme, userTheme.colorScheme ?? .light)
-        .modelContainer(sharedModelContainer)
+        
     }
 }
