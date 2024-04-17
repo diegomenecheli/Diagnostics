@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PingInfo {
+struct PingInfo: Hashable {
     let result: Double
     let ipAddress: String
     let error: String?

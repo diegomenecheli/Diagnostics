@@ -15,11 +15,11 @@ struct DiagnosticResultsView: View {
         NavigationStack {
             List {
                 Section("Informations") {
-                    //                InformationCell(title: "Network", icon: "gauge.with.needle", destination: AnyView(NetworkInfoView()))
-                    //
-                    //                InformationCell(title: "Wifi", icon: "wifi", destination: AnyView(WifiInfoView()))
-                    //
-                    //                InformationCell(title: "Ping", icon: "circle.circle", destination: AnyView(PingInfoView()))
+                    InformationCell(title: "Network", icon: "gauge.with.needle", destination: AnyView(NetworkInfoView()))
+                    
+                    InformationCell(title: "Wifi", icon: "wifi", destination: AnyView(WifiInfoView()))
+                    
+                    InformationCell(title: "Ping", icon: "circle.circle", destination: AnyView(PingInfoView()))
                     
                     InformationCell(title: "Device", icon: "iphone.gen1", destination: AnyView(DeviceInfoView()))
                 }

@@ -12,10 +12,17 @@ import SwiftData
 struct DiagnosticsApp: App {
     @AppStorage("userTheme") private var userTheme: Theme = .systemDefault
     @ObservedObject var deviceViewModel: DeviceViewModel = DeviceViewModel.shared
+    @ObservedObject var pingViewModel: PingViewModel = PingViewModel.shared
     @State private var updatedData = false
     
     private func handleData() {
         deviceViewModel.updateDeviceInfo()
+        pingViewModel.updatePings()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.2) {
+            withAnimation {
+                updatedData = true
+            }
+        }
         updatedData = true
     }
     

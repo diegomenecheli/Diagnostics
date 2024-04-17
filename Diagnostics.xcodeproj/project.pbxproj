@@ -33,6 +33,11 @@
 		7ADF77412BCF7630008BFFC6 /* NetworkIssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADF77402BCF7630008BFFC6 /* NetworkIssueView.swift */; };
 		7ADF77432BCF76A6008BFFC6 /* DiagnosticResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADF77422BCF76A6008BFFC6 /* DiagnosticResultsView.swift */; };
 		7ADF77462BCF7C53008BFFC6 /* DeviceInfoVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADF77452BCF7C53008BFFC6 /* DeviceInfoVIew.swift */; };
+		7ADF774A2BCF83A8008BFFC6 /* PingInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADF77492BCF83A8008BFFC6 /* PingInfoView.swift */; };
+		7ADF774C2BCF847C008BFFC6 /* WifiInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADF774B2BCF847C008BFFC6 /* WifiInfoView.swift */; };
+		7ADF774E2BCF84A4008BFFC6 /* NetworkInfoVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADF774D2BCF84A4008BFFC6 /* NetworkInfoVIew.swift */; };
+		7ADF77502BCF8640008BFFC6 /* wifi-dark.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ADF774F2BCF8640008BFFC6 /* wifi-dark.json */; };
+		7ADF77522BCF8671008BFFC6 /* wifi-light.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ADF77512BCF8671008BFFC6 /* wifi-light.json */; };
 		7AF80DBD2BA55BFB00978299 /* DeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80DBC2BA55BFB00978299 /* DeviceViewModel.swift */; };
 		7AF80DBF2BA55C6A00978299 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80DBE2BA55C6A00978299 /* DeviceInfo.swift */; };
 		7AF80DC22BA55DF700978299 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80DC12BA55DF700978299 /* FileManager.swift */; };
@@ -91,6 +96,11 @@
 		7ADF77402BCF7630008BFFC6 /* NetworkIssueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkIssueView.swift; sourceTree = "<group>"; };
 		7ADF77422BCF76A6008BFFC6 /* DiagnosticResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticResultsView.swift; sourceTree = "<group>"; };
 		7ADF77452BCF7C53008BFFC6 /* DeviceInfoVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoVIew.swift; sourceTree = "<group>"; };
+		7ADF77492BCF83A8008BFFC6 /* PingInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingInfoView.swift; sourceTree = "<group>"; };
+		7ADF774B2BCF847C008BFFC6 /* WifiInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiInfoView.swift; sourceTree = "<group>"; };
+		7ADF774D2BCF84A4008BFFC6 /* NetworkInfoVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInfoVIew.swift; sourceTree = "<group>"; };
+		7ADF774F2BCF8640008BFFC6 /* wifi-dark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "wifi-dark.json"; path = "../../../../Wifi-Diagnostics/WiFi Diagnostics/Ui/Assets/wifi-dark.json"; sourceTree = "<group>"; };
+		7ADF77512BCF8671008BFFC6 /* wifi-light.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "wifi-light.json"; path = "../../../../../Training/Wifi-Diagnostics/WiFi Diagnostics/Ui/Assets/wifi-light.json"; sourceTree = "<group>"; };
 		7AF80DBC2BA55BFB00978299 /* DeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewModel.swift; sourceTree = "<group>"; };
 		7AF80DBE2BA55C6A00978299 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		7AF80DC12BA55DF700978299 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
@@ -216,6 +226,8 @@
 		7A0783862B9FFCE90039F6F8 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				7ADF77512BCF8671008BFFC6 /* wifi-light.json */,
+				7ADF774F2BCF8640008BFFC6 /* wifi-dark.json */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -274,6 +286,9 @@
 			isa = PBXGroup;
 			children = (
 				7ADF77452BCF7C53008BFFC6 /* DeviceInfoVIew.swift */,
+				7ADF77492BCF83A8008BFFC6 /* PingInfoView.swift */,
+				7ADF774B2BCF847C008BFFC6 /* WifiInfoView.swift */,
+				7ADF774D2BCF84A4008BFFC6 /* NetworkInfoVIew.swift */,
 			);
 			path = ResultsView;
 			sourceTree = "<group>";
@@ -430,8 +445,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ADF77502BCF8640008BFFC6 /* wifi-dark.json in Resources */,
 				7A07835E2B9FF63F0039F6F8 /* Preview Assets.xcassets in Resources */,
 				7A07835A2B9FF63F0039F6F8 /* Assets.xcassets in Resources */,
+				7ADF77522BCF8671008BFFC6 /* wifi-light.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +474,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AA4CCF62BA7802100A2C228 /* PingViewModel.swift in Sources */,
+				7ADF774E2BCF84A4008BFFC6 /* NetworkInfoVIew.swift in Sources */,
 				7AA4CD042BA7FA7300A2C228 /* PingController.swift in Sources */,
 				7ADF77412BCF7630008BFFC6 /* NetworkIssueView.swift in Sources */,
 				7AF80DC92BA5608C00978299 /* PerformanceInfo.swift in Sources */,
@@ -474,6 +492,8 @@
 				7AF80DBD2BA55BFB00978299 /* DeviceViewModel.swift in Sources */,
 				7AF80DC22BA55DF700978299 /* FileManager.swift in Sources */,
 				7AA4CCFD2BA781EA00A2C228 /* PingInfoService.swift in Sources */,
+				7ADF774C2BCF847C008BFFC6 /* WifiInfoView.swift in Sources */,
+				7ADF774A2BCF83A8008BFFC6 /* PingInfoView.swift in Sources */,
 				7A826BA82BA2BE570010D64E /* LottieView.swift in Sources */,
 				7AA4CCF82BA7805F00A2C228 /* PingInfo.swift in Sources */,
 				7A07838E2B9FFE8B0039F6F8 /* ResultsCompletedView.swift in Sources */,
