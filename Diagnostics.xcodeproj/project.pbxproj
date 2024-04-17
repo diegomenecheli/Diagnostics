@@ -28,6 +28,7 @@
 		7AA4CCFF2BA78D2500A2C228 /* AvgPingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4CCFE2BA78D2500A2C228 /* AvgPingInfo.swift */; };
 		7AA4CD012BA797A500A2C228 /* AvgPingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4CD002BA797A500A2C228 /* AvgPingService.swift */; };
 		7AA4CD042BA7FA7300A2C228 /* PingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4CD032BA7FA7300A2C228 /* PingController.swift */; };
+		7ADF773B2BCF72F2008BFFC6 /* InformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADF773A2BCF72F2008BFFC6 /* InformationCell.swift */; };
 		7AF80DBD2BA55BFB00978299 /* DeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80DBC2BA55BFB00978299 /* DeviceViewModel.swift */; };
 		7AF80DBF2BA55C6A00978299 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80DBE2BA55C6A00978299 /* DeviceInfo.swift */; };
 		7AF80DC22BA55DF700978299 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80DC12BA55DF700978299 /* FileManager.swift */; };
@@ -81,6 +82,7 @@
 		7AA4CCFE2BA78D2500A2C228 /* AvgPingInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvgPingInfo.swift; sourceTree = "<group>"; };
 		7AA4CD002BA797A500A2C228 /* AvgPingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvgPingService.swift; sourceTree = "<group>"; };
 		7AA4CD032BA7FA7300A2C228 /* PingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingController.swift; sourceTree = "<group>"; };
+		7ADF773A2BCF72F2008BFFC6 /* InformationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationCell.swift; sourceTree = "<group>"; };
 		7AF80DBC2BA55BFB00978299 /* DeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewModel.swift; sourceTree = "<group>"; };
 		7AF80DBE2BA55C6A00978299 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		7AF80DC12BA55DF700978299 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				7A826BA72BA2BE570010D64E /* LottieView.swift */,
+				7ADF773A2BCF72F2008BFFC6 /* InformationCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 				7AF80DBF2BA55C6A00978299 /* DeviceInfo.swift in Sources */,
 				7A0783542B9FF63D0039F6F8 /* DiagnosticsApp.swift in Sources */,
 				7AF80DD32BA6203400978299 /* DeviceInfoService.swift in Sources */,
+				7ADF773B2BCF72F2008BFFC6 /* InformationCell.swift in Sources */,
 				7AF80DCB2BA61DBF00978299 /* BatteryService.swift in Sources */,
 				7AF80DD12BA61E8900978299 /* DeviceService.swift in Sources */,
 				7AA4CCFA2BA780C000A2C228 /* PingService.swift in Sources */,
