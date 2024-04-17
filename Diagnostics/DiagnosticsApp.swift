@@ -33,8 +33,10 @@ struct DiagnosticsApp: App {
                     .onAppear {
                         handleData()
                     }
+                    .preferredColorScheme(userTheme.colorScheme)
             } else {
-                ResultsCompletedView()
+                DiagnosticResultsView()
+                    .preferredColorScheme(userTheme.colorScheme)
             }
         }
         .environment(\.colorScheme, userTheme.colorScheme ?? .light)
