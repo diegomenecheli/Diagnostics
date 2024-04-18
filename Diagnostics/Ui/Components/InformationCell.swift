@@ -63,7 +63,7 @@ struct TestView: View {
             InformationCell(title: "Wi-Fi")
             InformationCell(title: "Wi-Fi", value: "Connected")
             InformationCell(title: "Wi-Fi", value: "Connected", icon: "wifi")
-            InformationCell(title: "Wi-Fi", value: "Connected", icon: "wifi", destination: AnyView(ResultsCompletedView()))
+            InformationCell(title: "Wi-Fi", value: "Connected", icon: "wifi", destination: AnyView(DiagnosticResultsView()))
 
         }
     }

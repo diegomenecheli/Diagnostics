@@ -9,22 +9,22 @@ import SwiftUI
 import SwiftData
 
 @main
-struct DiagnosticsApp: App {
+struct WiFi_DiagnosticsApp: App {
+    @State private var showSplashScreen = true
     @AppStorage("userTheme") private var userTheme: Theme = .systemDefault
-    @ObservedObject var deviceViewModel: DeviceViewModel = DeviceViewModel.shared
-    @ObservedObject var pingViewModel: PingViewModel = PingViewModel.shared
-    @State private var updatedData = false
     
-    private func handleData() {
-        deviceViewModel.updateDeviceInfo()
-        pingViewModel.updatePings()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.2) {
-            withAnimation {
-                updatedData = true
-            }
+    var sharedModelContainer: ModelContainer = {
+        let schema = Schema([
+            Item.self,
+        ])
+        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+        
+        do {
+            return try ModelContainer(for: schema, configurations: [modelConfiguration])
+        } catch {
+            fatalError("Could not create ModelContainer: \(error)")
         }
-        updatedData = true
-    }
+    }()
     
     init() {
         let appearance = UINavigationBarAppearance()
@@ -35,18 +35,23 @@ struct DiagnosticsApp: App {
     
     var body: some Scene {
         WindowGroup {
-            if updatedData {
-                LoadingView()
+            if showSplashScreen {
+                SplashView()
                     .onAppear {
-                        handleData()
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.2) {
+                            withAnimation {
+                                showSplashScreen = false
+                            }
+                        }
                     }
                     .preferredColorScheme(userTheme.colorScheme)
             } else {
-                DiagnosticResultsView()
+                StartDiagnosticView()
                     .preferredColorScheme(userTheme.colorScheme)
             }
         }
         .environment(\.colorScheme, userTheme.colorScheme ?? .light)
-        
+        .modelContainer(sharedModelContainer)
     }
 }
+

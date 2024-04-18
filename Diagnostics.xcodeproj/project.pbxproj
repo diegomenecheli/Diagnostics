@@ -17,7 +17,6 @@
 		7A0783852B9FFB7A0039F6F8 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0783842B9FFB7A0039F6F8 /* Theme.swift */; };
 		7A07838A2B9FFD8C0039F6F8 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0783892B9FFD8C0039F6F8 /* LoadingView.swift */; };
 		7A07838C2B9FFDF30039F6F8 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A07838B2B9FFDF30039F6F8 /* Item.swift */; };
-		7A07838E2B9FFE8B0039F6F8 /* ResultsCompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A07838D2B9FFE8B0039F6F8 /* ResultsCompletedView.swift */; };
 		7A0783912BA002960039F6F8 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 7A0783902BA002960039F6F8 /* Lottie */; };
 		7A0783942BA002A80039F6F8 /* SwiftSVG in Frameworks */ = {isa = PBXBuildFile; productRef = 7A0783932BA002A80039F6F8 /* SwiftSVG */; };
 		7A826BA82BA2BE570010D64E /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A826BA72BA2BE570010D64E /* LottieView.swift */; };
@@ -36,8 +35,14 @@
 		7ADF774A2BCF83A8008BFFC6 /* PingInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADF77492BCF83A8008BFFC6 /* PingInfoView.swift */; };
 		7ADF774C2BCF847C008BFFC6 /* WifiInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADF774B2BCF847C008BFFC6 /* WifiInfoView.swift */; };
 		7ADF774E2BCF84A4008BFFC6 /* NetworkInfoVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADF774D2BCF84A4008BFFC6 /* NetworkInfoVIew.swift */; };
-		7ADF77502BCF8640008BFFC6 /* wifi-dark.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ADF774F2BCF8640008BFFC6 /* wifi-dark.json */; };
-		7ADF77522BCF8671008BFFC6 /* wifi-light.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ADF77512BCF8671008BFFC6 /* wifi-light.json */; };
+		7AE48E652BD0D4D900D4F4EA /* test-loading-dark.json in Resources */ = {isa = PBXBuildFile; fileRef = 7AE48E642BD0D4D900D4F4EA /* test-loading-dark.json */; };
+		7AE48E672BD0D50800D4F4EA /* test-loading-light.json in Resources */ = {isa = PBXBuildFile; fileRef = 7AE48E662BD0D50800D4F4EA /* test-loading-light.json */; };
+		7AE48E6B2BD0D6BA00D4F4EA /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE48E6A2BD0D6BA00D4F4EA /* SplashView.swift */; };
+		7AE48E6D2BD0D6DD00D4F4EA /* StartDiagnosticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE48E6C2BD0D6DD00D4F4EA /* StartDiagnosticView.swift */; };
+		7AE48E6F2BD0D70C00D4F4EA /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE48E6E2BD0D70C00D4F4EA /* Permissions.swift */; };
+		7AE48E722BD0D84B00D4F4EA /* wifi-dark.json in Resources */ = {isa = PBXBuildFile; fileRef = 7AE48E702BD0D84B00D4F4EA /* wifi-dark.json */; };
+		7AE48E772BD0DA2000D4F4EA /* wifi-light.json in Resources */ = {isa = PBXBuildFile; fileRef = 7AE48E762BD0DA2000D4F4EA /* wifi-light.json */; };
+		7AE48E7A2BD0E0F400D4F4EA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE48E792BD0E0F400D4F4EA /* Color.swift */; };
 		7AF80DBD2BA55BFB00978299 /* DeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80DBC2BA55BFB00978299 /* DeviceViewModel.swift */; };
 		7AF80DBF2BA55C6A00978299 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80DBE2BA55C6A00978299 /* DeviceInfo.swift */; };
 		7AF80DC22BA55DF700978299 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80DC12BA55DF700978299 /* FileManager.swift */; };
@@ -82,7 +87,6 @@
 		7A0783842B9FFB7A0039F6F8 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		7A0783892B9FFD8C0039F6F8 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		7A07838B2B9FFDF30039F6F8 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		7A07838D2B9FFE8B0039F6F8 /* ResultsCompletedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsCompletedView.swift; sourceTree = "<group>"; };
 		7A826BA72BA2BE570010D64E /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		7AA4CCF52BA7802100A2C228 /* PingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingViewModel.swift; sourceTree = "<group>"; };
 		7AA4CCF72BA7805F00A2C228 /* PingInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingInfo.swift; sourceTree = "<group>"; };
@@ -99,8 +103,14 @@
 		7ADF77492BCF83A8008BFFC6 /* PingInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingInfoView.swift; sourceTree = "<group>"; };
 		7ADF774B2BCF847C008BFFC6 /* WifiInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiInfoView.swift; sourceTree = "<group>"; };
 		7ADF774D2BCF84A4008BFFC6 /* NetworkInfoVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInfoVIew.swift; sourceTree = "<group>"; };
-		7ADF774F2BCF8640008BFFC6 /* wifi-dark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "wifi-dark.json"; path = "../../../../Wifi-Diagnostics/WiFi Diagnostics/Ui/Assets/wifi-dark.json"; sourceTree = "<group>"; };
-		7ADF77512BCF8671008BFFC6 /* wifi-light.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "wifi-light.json"; path = "../../../../../Training/Wifi-Diagnostics/WiFi Diagnostics/Ui/Assets/wifi-light.json"; sourceTree = "<group>"; };
+		7AE48E642BD0D4D900D4F4EA /* test-loading-dark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "test-loading-dark.json"; path = "../../../../Wifi-Diagnostics/WiFi Diagnostics/Ui/Assets/test-loading-dark.json"; sourceTree = "<group>"; };
+		7AE48E662BD0D50800D4F4EA /* test-loading-light.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "test-loading-light.json"; path = "../../../../Wifi-Diagnostics/WiFi Diagnostics/Ui/Assets/test-loading-light.json"; sourceTree = "<group>"; };
+		7AE48E6A2BD0D6BA00D4F4EA /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		7AE48E6C2BD0D6DD00D4F4EA /* StartDiagnosticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartDiagnosticView.swift; sourceTree = "<group>"; };
+		7AE48E6E2BD0D70C00D4F4EA /* Permissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
+		7AE48E702BD0D84B00D4F4EA /* wifi-dark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "wifi-dark.json"; path = "../../../../Wifi-Diagnostics/WiFi Diagnostics/Ui/Assets/wifi-dark.json"; sourceTree = "<group>"; };
+		7AE48E762BD0DA2000D4F4EA /* wifi-light.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "wifi-light.json"; path = "../../../../../../Downloads/wifi-light.json"; sourceTree = "<group>"; };
+		7AE48E792BD0E0F400D4F4EA /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		7AF80DBC2BA55BFB00978299 /* DeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewModel.swift; sourceTree = "<group>"; };
 		7AF80DBE2BA55C6A00978299 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		7AF80DC12BA55DF700978299 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
@@ -206,6 +216,7 @@
 		7A0783802B9FFAF80039F6F8 /* Ui */ = {
 			isa = PBXGroup;
 			children = (
+				7AE48E782BD0E0BF00D4F4EA /* Colors */,
 				7A0783882B9FFD0D0039F6F8 /* Components */,
 				7A0783872B9FFCFD0039F6F8 /* View */,
 				7A0783862B9FFCE90039F6F8 /* Assets */,
@@ -226,8 +237,10 @@
 		7A0783862B9FFCE90039F6F8 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				7ADF77512BCF8671008BFFC6 /* wifi-light.json */,
-				7ADF774F2BCF8640008BFFC6 /* wifi-dark.json */,
+				7AE48E662BD0D50800D4F4EA /* test-loading-light.json */,
+				7AE48E762BD0DA2000D4F4EA /* wifi-light.json */,
+				7AE48E702BD0D84B00D4F4EA /* wifi-dark.json */,
+				7AE48E642BD0D4D900D4F4EA /* test-loading-dark.json */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -237,10 +250,11 @@
 			children = (
 				7ADF77442BCF7C3C008BFFC6 /* ResultsView */,
 				7A0783892B9FFD8C0039F6F8 /* LoadingView.swift */,
-				7A07838D2B9FFE8B0039F6F8 /* ResultsCompletedView.swift */,
 				7ADF773E2BCF75F8008BFFC6 /* SettingsView.swift */,
 				7ADF77402BCF7630008BFFC6 /* NetworkIssueView.swift */,
 				7ADF77422BCF76A6008BFFC6 /* DiagnosticResultsView.swift */,
+				7AE48E6A2BD0D6BA00D4F4EA /* SplashView.swift */,
+				7AE48E6C2BD0D6DD00D4F4EA /* StartDiagnosticView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -293,6 +307,14 @@
 			path = ResultsView;
 			sourceTree = "<group>";
 		};
+		7AE48E782BD0E0BF00D4F4EA /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				7AE48E792BD0E0F400D4F4EA /* Color.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
 		7AF80DB92BA5577500978299 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -307,6 +329,7 @@
 			children = (
 				7AF80DC12BA55DF700978299 /* FileManager.swift */,
 				7AF80DC32BA55E7200978299 /* StringHelper.swift */,
+				7AE48E6E2BD0D70C00D4F4EA /* Permissions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -445,10 +468,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ADF77502BCF8640008BFFC6 /* wifi-dark.json in Resources */,
+				7AE48E652BD0D4D900D4F4EA /* test-loading-dark.json in Resources */,
 				7A07835E2B9FF63F0039F6F8 /* Preview Assets.xcassets in Resources */,
+				7AE48E722BD0D84B00D4F4EA /* wifi-dark.json in Resources */,
+				7AE48E772BD0DA2000D4F4EA /* wifi-light.json in Resources */,
 				7A07835A2B9FF63F0039F6F8 /* Assets.xcassets in Resources */,
-				7ADF77522BCF8671008BFFC6 /* wifi-light.json in Resources */,
+				7AE48E672BD0D50800D4F4EA /* test-loading-light.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +498,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AE48E6F2BD0D70C00D4F4EA /* Permissions.swift in Sources */,
+				7AE48E6D2BD0D6DD00D4F4EA /* StartDiagnosticView.swift in Sources */,
 				7AA4CCF62BA7802100A2C228 /* PingViewModel.swift in Sources */,
 				7ADF774E2BCF84A4008BFFC6 /* NetworkInfoVIew.swift in Sources */,
 				7AA4CD042BA7FA7300A2C228 /* PingController.swift in Sources */,
@@ -488,15 +515,16 @@
 				7A07838A2B9FFD8C0039F6F8 /* LoadingView.swift in Sources */,
 				7AF80DCD2BA61DED00978299 /* DiskSpaceService.swift in Sources */,
 				7AA4CD012BA797A500A2C228 /* AvgPingService.swift in Sources */,
+				7AE48E7A2BD0E0F400D4F4EA /* Color.swift in Sources */,
 				7A0783832B9FFB380039F6F8 /* ThemeChangeView.swift in Sources */,
 				7AF80DBD2BA55BFB00978299 /* DeviceViewModel.swift in Sources */,
 				7AF80DC22BA55DF700978299 /* FileManager.swift in Sources */,
 				7AA4CCFD2BA781EA00A2C228 /* PingInfoService.swift in Sources */,
+				7AE48E6B2BD0D6BA00D4F4EA /* SplashView.swift in Sources */,
 				7ADF774C2BCF847C008BFFC6 /* WifiInfoView.swift in Sources */,
 				7ADF774A2BCF83A8008BFFC6 /* PingInfoView.swift in Sources */,
 				7A826BA82BA2BE570010D64E /* LottieView.swift in Sources */,
 				7AA4CCF82BA7805F00A2C228 /* PingInfo.swift in Sources */,
-				7A07838E2B9FFE8B0039F6F8 /* ResultsCompletedView.swift in Sources */,
 				7AF80DBF2BA55C6A00978299 /* DeviceInfo.swift in Sources */,
 				7A0783542B9FF63D0039F6F8 /* DiagnosticsApp.swift in Sources */,
 				7AF80DD32BA6203400978299 /* DeviceInfoService.swift in Sources */,
@@ -668,6 +696,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow access to your location to connect IoT devices";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -706,6 +735,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow access to your location to connect IoT devices";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
