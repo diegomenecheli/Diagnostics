@@ -10,13 +10,13 @@ import SwiftData
 
 struct PingInfoView: View {
     let pings: [PingInfo] = PingViewModel.shared.getPings()
-//    let avgPing: AveragePingInfo = SharedPings.shared.getAvgPingInfo()
+    let avgPing: AvgPingInfo = PingViewModel.shared.getAvgPing()
    
 
     var body: some View {
         List {
             Section("Average Pings") {
-//                InformationCell(title: "Average Ping", value: "\(String(format: "%.0f", avgPing.averageLatency)) ms")
+                InformationCell(title: "Average Ping", value: "\(String(format: "%.0f", avgPing.averageLatency)) ms")
             }
             Section("Pings") {
                 ForEach(Array(pings.enumerated()), id: \.element.self) { index, ping in

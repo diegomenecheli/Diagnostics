@@ -34,6 +34,7 @@ struct LoadingView: View {
             }
         }
         pingViewModel.updatePings {
+            pingViewModel.updateAvgPing()
             updatedData = true
         }
         deviceViewModel.updateDeviceInfo()

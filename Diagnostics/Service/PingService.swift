@@ -11,7 +11,7 @@ protocol PingServiceProtocol {
     typealias UpdatePingsCompletion = ([PingInfo]) -> Void
     
     func updatePings(completion: @escaping UpdatePingsCompletion)
-    //    func updateAvgPing() -> AvgPingInfo
+    func updateAvgPing(pings: [PingInfo]) -> AvgPingInfo
 }
 
 class PingService: PingServiceProtocol {
@@ -30,9 +30,9 @@ class PingService: PingServiceProtocol {
         pingInfoService.updatePings(completion: completion)
     }
     
-    //
-    //    func updateAvgPing() -> AvgPingInfo {
-    //        return avgPingService.
-    //    }
+    
+    func updateAvgPing(pings: [PingInfo]) -> AvgPingInfo {
+        return avgPingService.createAvgPingInfo(pings: pings)
+    }
     
 }

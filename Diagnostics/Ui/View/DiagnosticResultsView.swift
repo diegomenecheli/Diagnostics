@@ -25,6 +25,8 @@ struct DiagnosticResultsView: View {
                 }
             }
             .navigationBarTitle("Diagnostics", displayMode: .inline)
+            
+            .navigationBarBackButtonHidden()
             .navigationTitle("")
             .navigationBarItems(
                 trailing: NavigationLink(

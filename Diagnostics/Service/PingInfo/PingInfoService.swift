@@ -9,7 +9,6 @@ import Foundation
 
 protocol PingInfoServiceProtocol {
     typealias UpdatePingsCompletion = ([PingInfo]) -> Void
-    
     func updatePings(completion: @escaping UpdatePingsCompletion)
 }
 
@@ -50,7 +49,7 @@ class PingInfoService: PingInfoServiceProtocol {
             try self.pingManager?.startPinging()
         } catch {
             pings.append(PingInfo(result: 0.0, ipAddress: "", error: error.localizedDescription))
-            completion(pings) // Return the pings array with error via completion handler
+            completion(pings)
         }
     }
     
