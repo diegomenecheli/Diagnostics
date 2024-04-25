@@ -17,10 +17,10 @@ struct LoadingView: View {
     @State private var updatedData = false
     @ObservedObject var deviceViewModel: DeviceViewModel = DeviceViewModel.shared
     @ObservedObject var pingViewModel: PingViewModel = PingViewModel.shared
-//    @ObservedObject  var sharedNetworkInfo: SharedNetworkInfo = SharedNetworkInfo()
-//
-//    
-
+    //    @ObservedObject  var sharedNetworkInfo: SharedNetworkInfo = SharedNetworkInfo()
+    //
+    //
+    
     private func handleData() {
         showMessage = true
         Timer.scheduledTimer(withTimeInterval: 3, repeats: true) { _ in
@@ -33,22 +33,24 @@ struct LoadingView: View {
                 }
             }
         }
-        
-        pingViewModel.updatePings()
+        pingViewModel.updatePings {
+            updatedData = true
+        }
         deviceViewModel.updateDeviceInfo()
-        updatedData = true
-//        _ = SharedDeviceInfo.shared.updateDeviceInfo()
-//        SharedWifiInfo.shared.checkWifiInfo()
-//
         
-//
-//        sharedNetworkInfo.startNetworkInfo()
-//        
-//        sharedNetworkInfo.onNetworkInfoUpdated = { [self] in
-//            createWDRController.createWDR {
-//                updatedData = true
-//            }
-//        }
+        
+        //        _ = SharedDeviceInfo.shared.updateDeviceInfo()
+        //        SharedWifiInfo.shared.checkWifiInfo()
+        //
+        
+        //
+        //        sharedNetworkInfo.startNetworkInfo()
+        //
+        //        sharedNetworkInfo.onNetworkInfoUpdated = { [self] in
+        //            createWDRController.createWDR {
+        //                updatedData = true
+        //            }
+        //        }
     }
     
     var body: some View {
@@ -72,7 +74,7 @@ struct LoadingView: View {
                         .animation(.easeInOut(duration: 1), value: showMessage)
                         .padding(.bottom, 20)
                     
-                    Text("Tests usually takes 10-50s, please wait")
+                    Text("Tests usually takes 1-10s, please wait")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                         .padding(.bottom, 12)

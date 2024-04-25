@@ -10,25 +10,23 @@ import Foundation
 class PingViewModel: ObservableObject {
     static let shared = PingViewModel()
     
-    @Published private var pings: [PingInfo]
-    @Published private var avgPing: AvgPingInfo
+    @Published private var pings: [PingInfo] = []
     private let pingService: PingServiceProtocol
     
     init(pingService: PingServiceProtocol = PingService()) {
         self.pingService = pingService
-        self.pings = pingService.getPings()
-        self.avgPing = pingService.getAvgPing()
     }
     
-    func updatePings() {
-        self.pings = pingService.getPings()
+    func updatePings(completion: @escaping () -> Void) {
+        pingService.updatePings { [weak self] updatedPings in
+            DispatchQueue.main.async {
+                self?.pings = updatedPings
+                completion() 
+            }
+        }
     }
     
     func getPings() -> [PingInfo] {
         return pings
-    }
-    
-    func getAvgPing() -> AvgPingInfo {
-        return avgPing
     }
 }

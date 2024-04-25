@@ -19,6 +19,7 @@
 		7A07838C2B9FFDF30039F6F8 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A07838B2B9FFDF30039F6F8 /* Item.swift */; };
 		7A0783912BA002960039F6F8 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 7A0783902BA002960039F6F8 /* Lottie */; };
 		7A0783942BA002A80039F6F8 /* SwiftSVG in Frameworks */ = {isa = PBXBuildFile; productRef = 7A0783932BA002A80039F6F8 /* SwiftSVG */; };
+		7A5967E82BD9C1AA008579E0 /* SwiftyPing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5967E72BD9C1AA008579E0 /* SwiftyPing.swift */; };
 		7A826BA82BA2BE570010D64E /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A826BA72BA2BE570010D64E /* LottieView.swift */; };
 		7AA4CCF62BA7802100A2C228 /* PingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4CCF52BA7802100A2C228 /* PingViewModel.swift */; };
 		7AA4CCF82BA7805F00A2C228 /* PingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4CCF72BA7805F00A2C228 /* PingInfo.swift */; };
@@ -26,7 +27,6 @@
 		7AA4CCFD2BA781EA00A2C228 /* PingInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4CCFC2BA781EA00A2C228 /* PingInfoService.swift */; };
 		7AA4CCFF2BA78D2500A2C228 /* AvgPingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4CCFE2BA78D2500A2C228 /* AvgPingInfo.swift */; };
 		7AA4CD012BA797A500A2C228 /* AvgPingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4CD002BA797A500A2C228 /* AvgPingService.swift */; };
-		7AA4CD042BA7FA7300A2C228 /* PingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4CD032BA7FA7300A2C228 /* PingController.swift */; };
 		7ADF773B2BCF72F2008BFFC6 /* InformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADF773A2BCF72F2008BFFC6 /* InformationCell.swift */; };
 		7ADF773F2BCF75F8008BFFC6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADF773E2BCF75F8008BFFC6 /* SettingsView.swift */; };
 		7ADF77412BCF7630008BFFC6 /* NetworkIssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADF77402BCF7630008BFFC6 /* NetworkIssueView.swift */; };
@@ -87,6 +87,7 @@
 		7A0783842B9FFB7A0039F6F8 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		7A0783892B9FFD8C0039F6F8 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		7A07838B2B9FFDF30039F6F8 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		7A5967E72BD9C1AA008579E0 /* SwiftyPing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyPing.swift; sourceTree = "<group>"; };
 		7A826BA72BA2BE570010D64E /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		7AA4CCF52BA7802100A2C228 /* PingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingViewModel.swift; sourceTree = "<group>"; };
 		7AA4CCF72BA7805F00A2C228 /* PingInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingInfo.swift; sourceTree = "<group>"; };
@@ -94,7 +95,6 @@
 		7AA4CCFC2BA781EA00A2C228 /* PingInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingInfoService.swift; sourceTree = "<group>"; };
 		7AA4CCFE2BA78D2500A2C228 /* AvgPingInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvgPingInfo.swift; sourceTree = "<group>"; };
 		7AA4CD002BA797A500A2C228 /* AvgPingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvgPingService.swift; sourceTree = "<group>"; };
-		7AA4CD032BA7FA7300A2C228 /* PingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingController.swift; sourceTree = "<group>"; };
 		7ADF773A2BCF72F2008BFFC6 /* InformationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationCell.swift; sourceTree = "<group>"; };
 		7ADF773E2BCF75F8008BFFC6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		7ADF77402BCF7630008BFFC6 /* NetworkIssueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkIssueView.swift; sourceTree = "<group>"; };
@@ -173,7 +173,7 @@
 		7A0783522B9FF63D0039F6F8 /* Diagnostics */ = {
 			isa = PBXGroup;
 			children = (
-				7AA4CD022BA7FA6200A2C228 /* Controller */,
+				7A5967E62BD9C192008579E0 /* Packages */,
 				7AF80DC52BA55FB900978299 /* Service */,
 				7AF80DC02BA55DDE00978299 /* Utils */,
 				7AF80DB92BA5577500978299 /* ViewModel */,
@@ -268,6 +268,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		7A5967E62BD9C192008579E0 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				7A5967E72BD9C1AA008579E0 /* SwiftyPing.swift */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
 		7A826BA02BA2B8530010D64E /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,14 +294,6 @@
 				7AA4CD002BA797A500A2C228 /* AvgPingService.swift */,
 			);
 			path = PingInfo;
-			sourceTree = "<group>";
-		};
-		7AA4CD022BA7FA6200A2C228 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				7AA4CD032BA7FA7300A2C228 /* PingController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		7ADF77442BCF7C3C008BFFC6 /* ResultsView */ = {
@@ -501,8 +501,8 @@
 				7AE48E6F2BD0D70C00D4F4EA /* Permissions.swift in Sources */,
 				7AE48E6D2BD0D6DD00D4F4EA /* StartDiagnosticView.swift in Sources */,
 				7AA4CCF62BA7802100A2C228 /* PingViewModel.swift in Sources */,
+				7A5967E82BD9C1AA008579E0 /* SwiftyPing.swift in Sources */,
 				7ADF774E2BCF84A4008BFFC6 /* NetworkInfoVIew.swift in Sources */,
-				7AA4CD042BA7FA7300A2C228 /* PingController.swift in Sources */,
 				7ADF77412BCF7630008BFFC6 /* NetworkIssueView.swift in Sources */,
 				7AF80DC92BA5608C00978299 /* PerformanceInfo.swift in Sources */,
 				7ADF77432BCF76A6008BFFC6 /* DiagnosticResultsView.swift in Sources */,

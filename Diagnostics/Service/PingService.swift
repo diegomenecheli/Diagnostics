@@ -8,22 +8,31 @@
 import Foundation
 
 protocol PingServiceProtocol {
-    func getPings() -> [PingInfo]
-    func getAvgPing() -> AvgPingInfo
+    typealias UpdatePingsCompletion = ([PingInfo]) -> Void
+    
+    func updatePings(completion: @escaping UpdatePingsCompletion)
+    //    func updateAvgPing() -> AvgPingInfo
 }
 
 class PingService: PingServiceProtocol {
     private let pingInfoService: PingInfoServiceProtocol
+    private let avgPingService: AvgPingServiceProtocol
     
-    init(pingInfoService: PingInfoServiceProtocol = PingInfoService()) {
+    init(
+        pingInfoService: PingInfoServiceProtocol = PingInfoService(),
+        avgPingService: AvgPingServiceProtocol = AvgPingService()
+    ) {
         self.pingInfoService = pingInfoService
+        self.avgPingService = avgPingService
     }
     
-    func getPings() -> [PingInfo] {
-        return pingInfoService.getPings()
+    func updatePings(completion: @escaping ([PingInfo]) -> Void) {
+        pingInfoService.updatePings(completion: completion)
     }
     
-    func getAvgPing() -> AvgPingInfo {
-        return pingInfoService.getAvgPing()
-    }
+    //
+    //    func updateAvgPing() -> AvgPingInfo {
+    //        return avgPingService.
+    //    }
+    
 }
